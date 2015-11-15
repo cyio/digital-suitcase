@@ -1,0 +1,6 @@
+*~
+*.swp
+*.swo
+examples
+.vagrant
+.idea
