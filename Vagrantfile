@@ -2,9 +2,11 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu"
-  config.vm.network "private_network", ip: "192.168.2.0"
-  config.vm.network "forwarded_port", guest: 80, host: 80
+  config.vm.network "public_network"
+  # config.vm.network "private_network", ip: "192.168.2.0"
+  config.vm.network "forwarded_port", guest: 80, host: 1024
   config.vm.synced_folder "d:/cyio/", "/home/vagrant/", :type => "nfs"
+  config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
   config.vm.provision "shell", path: "install/init.sh"
   config.vm.provision "shell", path: "install/git.sh"
@@ -19,6 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "install/bower.sh"
   config.vm.provision "shell", path: "install/grunt.sh"
   config.vm.provision "shell", path: "install/gulp.sh"
+  config.vm.provision "shell", path: "install/neovim.sh"
   # config.vm.provision "shell", path: "install/composer.sh"
   # config.vm.provision "shell", path: "install/phpmyadmin.sh", args: ["root"]
   # config.vm.provision "shell", path: "install/elasticsearch.sh", args: ["1.3.1"]
@@ -31,7 +34,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = 'frontend.dev'
 
   config.vm.provider "virtualbox" do |v|
-    v.memory = 1024
+    v.memory = 312
     v.cpus = 2
   end
 end

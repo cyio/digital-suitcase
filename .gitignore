@@ -1,6 +1,7 @@
 *~
 *.swp
 *.swo
-examples
+example
 .vagrant
 .idea
+*.box
