@@ -1,0 +1,12 @@
+# Set Zsh as your default Tmux shell
+# set-option -g default-shell /bin/zsh
+
+# Tmux should be pretty, we need 256 color for that
+set -g default-terminal "screen-256color"
+
+# Allow us to reload our Tmux configuration while
+# using Tmux
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
+# 响应缩放
+#setw -g aggressive-resize on
