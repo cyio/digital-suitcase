@@ -6,19 +6,19 @@ function lazygit() {
 function cyio() {
 	cd /d/cyio
 }
-function career() {
-	cd /p/201510/tennis-career/src	
+function bocai() {
+	cd /d/cyio/Projects/201512/bocai/src	
 }
 function note(){
-	cd /p/201511/worknotes
+	cd /d/cyio/Projects/worknotes
 }
 function vbox(){
 	cd /d/cyio/vbox
 }
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 # cd $OLDPWD
-alias gem ='/cygdrive/c/tools/ruby21/bin/gem'
-alias ruby ='/cygdrive/c/tools/ruby21/bin/ruby.exe'
+alias gem ='/cygdrive/c/tools/ruby22/bin/gem'
+alias ruby ='/cygdrive/c/tools/ruby22/bin/ruby.exe'
 alias wst="/cygdrive/c/Program\ Files\ \(x86\)/JetBrains/WebStorm\ 10.0.4/bin/WebStorm.exe $1 &"
 # alias tmuxre='tmux new-session -t default || tmux new-session -s default
 # alias fis3="/cygdrive/c/Program\ Files/nodejs/fis3.cmd"
@@ -79,7 +79,7 @@ DISABLE_LS_COLORS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux git-flow-completion autojump ssh-agent)
+# plugins=(git tmux git-flow-completion autojump ssh-agent)
 
 # User configuration
 
