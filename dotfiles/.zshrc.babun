@@ -12,6 +12,7 @@ function bocai() {
 function note(){
 	cd /d/cyio/Projects/worknotes
 }
+function work(){cd /d/cyio/Projects/201601}
 function vbox(){
 	cd /d/cyio/vbox
 }
