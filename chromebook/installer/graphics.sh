@@ -1,0 +1,1 @@
+apt-get -y install blender gimp inkscape
