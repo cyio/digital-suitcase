@@ -7,4 +7,5 @@ then
     echo "--------------"
 
     apt-get install -y --force-yes npm
+		npm install npm -g
 fi
