@@ -18,8 +18,8 @@ function vbox(){
 }
 # eval "$(hub alias -s)"
 # cd $OLDPWD
-alias gem ='/cygdrive/c/tools/ruby22/bin/gem'
-alias ruby ='/cygdrive/c/tools/ruby22/bin/ruby.exe'
+# alias gem ='/cygdrive/c/tools/ruby22/bin/gem'
+# alias ruby ='/cygdrive/c/tools/ruby22/bin/ruby.exe'
 alias wst="/cygdrive/c/Program\ Files\ \(x86\)/JetBrains/WebStorm\ 10.0.4/bin/WebStorm.exe $1 &"
 # alias tmuxre='tmux new-session -t default || tmux new-session -s default
 # alias fis3="/cygdrive/c/Program\ Files/nodejs/fis3.cmd"
