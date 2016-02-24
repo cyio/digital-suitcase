@@ -18,9 +18,5 @@ then
     echo "Installing OhMyZ.sh for $2 user"
     echo "-------------------------------"
 
-    git clone https://github.com/robbyrussell/oh-my-zsh.git $1/.oh-my-zsh
-    cp $1/.oh-my-zsh/templates/zshrc.zsh-template $1/.zshrc
-
-    chsh -s /bin/zsh $2
-    chown -R $2:$2 $1
+    sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 fi
