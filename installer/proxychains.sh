@@ -1,3 +1,3 @@
-apt-get install proxychains -y
+sudo apt-get install proxychains -y
 cp .proxychains ~/
 
