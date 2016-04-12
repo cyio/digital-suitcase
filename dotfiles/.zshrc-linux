@@ -84,6 +84,7 @@ plugins=(git tmux git-flow-completion autojump ssh-agent)
  export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+DISABLE_AUTO_UPDATE="true"
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -110,4 +111,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=/home/oaker/.npm-packages/lib/node_modules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+export PATH=/home/oaker/.npm-packages/lib/node_modules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/media/oaker/d/cyio/android-studio/bin:/home/oaker/Android/Sdk/platform-tools
