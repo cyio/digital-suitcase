@@ -1,3 +1,4 @@
+alias hg='history|grep'
 alias dt='date --rfc-3339="date"'
 alias wx='cd /home/oaker/Projects/1603/electronic-wechat&& npm start &'
 alias open='xdg-open'
@@ -11,17 +12,17 @@ function lazygit() {
     git push
 }
 function cyio() {
-	cd /d/cyio
+  cd /d/cyio
 }
 function bocai() {
-	cd /d/cyio/Projects/201512/bocai/src	
+  cd /d/cyio/Projects/201512/bocai/src
 }
 function note(){
-	cd /d/cyio/Projects/worknotes
+  cd /d/cyio/Projects/worknotes
 }
 function work(){cd /d/cyio/Projects/201601}
 function vbox(){
-	cd /d/cyio/vbox
+  cd /d/cyio/vbox
 }
 # eval "$(hub alias -s)"
 # cd $OLDPWD
@@ -112,3 +113,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=/home/oaker/.npm-packages/lib/node_modules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/media/oaker/d/cyio/android-studio/bin:/home/oaker/Android/Sdk/platform-tools
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
