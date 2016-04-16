@@ -6,4 +6,5 @@ mv 视频 Videos
 mv 音乐 Music
 mv 图片 Pictures
 mv 模板 Templates
-mv 公开 Public
+mv 公共 Public
+mv 下载 Downloads

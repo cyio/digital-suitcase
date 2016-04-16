@@ -9,6 +9,7 @@ filetype off  " required!
 call plug#begin('~/.vim/plugged')
 
 " My Plugins here:
+Plug 'lilydjwg/fcitx.vim'
 Plug 'digitaltoad/vim-jade'
 Plug 'mileszs/ack.vim'
 Plug 'mattn/emmet-vim'
