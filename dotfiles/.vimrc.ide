@@ -3,7 +3,7 @@ let g:hybrid_use_iTerm_colors = 1
 "colorscheme hybrid  
 set background=dark
 
-" Configuration section of vundle
+" Configuration section of plug
 filetype off  " required!
 
 call plug#begin('~/.vim/plugged')
@@ -39,17 +39,10 @@ Plug 'elixir-lang/vim-elixir'
 
 call plug#end()
 filetype plugin indent on     " required!
- " End of vundle configuration
+ " End of plug configuration
  
 "For ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
-
-"Powerline setting
-"Set GUI font type
-if has("gui_running")
-	set guifont=Source\ Code\ Pro\:h18
-endif
-let g:airline_powerline_fonts = 1
 
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
