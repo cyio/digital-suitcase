@@ -4,7 +4,7 @@ alias wx='cd /home/oaker/Projects/1603/electronic-wechat&& npm start &'
 alias open='xdg-open'
 # alias vim="nvim"s
 function gi() { curl -L -ttps://www.gitignore.io/api/$@ ;}
-functioazygit() {
+function lazygit() {
 	git add .
 	git commit -a -m "$1"
 	git push
