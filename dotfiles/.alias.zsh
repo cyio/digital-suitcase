@@ -1,11 +1,10 @@
 alias dt='date --rfc-3339="date"'
-alias hg='history|grep'
-alias wx='cd /home/oaker/Projects/1603/electronic-wechat&& npm start &'
+alias hig='history|grep'
 alias open='xdg-open'
-# alias vim="nvim"s
+# alias vim="nvim"
 function gi() { curl -L -ttps://www.gitignore.io/api/$@ ;}
 function lazygit() {
-	git add .
-	git commit -a -m "$1"
-	git push
+  git add .
+  git commit -a -m "$1"
+  git push
 }

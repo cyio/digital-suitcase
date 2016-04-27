@@ -1,3 +1,4 @@
+source ~/.alias.zsh
 # eval "$(hub alias -s)"
 # cd $OLDPWD
 # alias tmuxre='tmux new-session -t default || tmux new-session -s default
