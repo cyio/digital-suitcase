@@ -1,4 +1,6 @@
 alias dt='date --rfc-3339="date"'
+alias v='vim'
+alias z='cd'
 alias hig='history|grep'
 alias open='xdg-open'
 # alias vim="nvim"
