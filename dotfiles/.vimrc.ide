@@ -1,4 +1,12 @@
 syntax on
+inoremap <esc> <nop>
+inoremap <left> <nop>
+inoremap jk <esc>
+iabbrev cls console.log('')
+" edit my vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+" source my vimrc
+nnoremap <leader>sv :source $MYVIMRC<cr>
 let g:hybrid_use_iTerm_colors = 1
 "colorscheme hybrid  
 set background=dark
