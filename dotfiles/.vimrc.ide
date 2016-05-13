@@ -9,7 +9,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 let g:hybrid_use_iTerm_colors = 1
 "colorscheme hybrid  
-set background=dark
+"set background=dark
 
 " Configuration section of plug
 filetype off  " required!
@@ -43,6 +43,7 @@ Plug 'vim-scripts/wildfire.vim'
 "Plug 'nathanaelkane/vim-indent-guides'
 "Plug 'yonchu/accelerated-smooth-scroll'
 "Plug 'ianva/vim-youdao-translater'
+Plug 'marijnh/tern_for_vim'
 Plug 'elixir-lang/vim-elixir'
 "Plug 'Valloric/YouCompleteMe'
 
@@ -54,7 +55,7 @@ filetype plugin indent on     " required!
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 "improve autocomplete menu color
-highlight Pmenu ctermbg=238 gui=bold
+"highlight Pmenu ctermbg=238 gui=bold
 
 "Setup SuperTab
 let g:SuperTabRetainCompletionType="context"
