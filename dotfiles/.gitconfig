@@ -9,7 +9,7 @@
 	email = icaner@qq.com
 	name = cyio
 [merge]
-	tool = p4merge
+	tool = vimdiff
 [mergetool "p4merge"]
 	path = c:/Program Files/Perforce/p4merge.exe
 	trustExitCode = true	
@@ -38,3 +38,4 @@
   wc = whatchanged -p --abbrev-commit --pretty=medium
   unstage = reset HEAD --
   edit = "!nvim `git ls-files -m`"
+	la = config --get-regexp alias
