@@ -87,4 +87,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=/home/oaker/.npm-packages/lib/node_modules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/media/oaker/d/cyio/android-studio/bin:/home/oaker/Android/Sdk/platform-tools
+#export PATH=/home/oaker/.npm-packages/lib/node_modules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/media/oaker/d/cyio/android-studio/bin:/home/oaker/Android/Sdk/platform-tools
