@@ -4,6 +4,7 @@ source ~/.alias.zsh
 # alias tmuxre='tmux new-session -t default || tmux new-session -s default
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
+export PATH=~/.npm-packages/lib/node_modules/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:~/d/cyio/android-studio/bin:~/Android/Sdk/platform-tools
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -57,7 +58,7 @@ plugins=(git tmux git-flow-completion autojump ssh-agent)
 
 # User configuration
 
- export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
+# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 DISABLE_AUTO_UPDATE="true"

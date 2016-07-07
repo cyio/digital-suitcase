@@ -3,7 +3,6 @@ syntax on
 set background=dark
 set t_Co=256
 color mango
-
 " hardcore mode
 inoremap <esc> <nop>
 inoremap <left> <nop>
@@ -22,6 +21,7 @@ filetype off  " required!
 call plug#begin('~/.vim/plugged')
 
 " My Plugins here:
+"Plug 'posva/vim-vue'
 Plug 'lilydjwg/fcitx.vim'
 Plug 'digitaltoad/vim-jade'
 Plug 'mileszs/ack.vim'
@@ -50,13 +50,16 @@ Plug 'vim-scripts/wildfire.vim'
 "Plug 'ianva/vim-youdao-translater'
 Plug 'marijnh/tern_for_vim'
 Plug 'elixir-lang/vim-elixir'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/yajs.vim'
 Plug 'elzr/vim-json'
+"support markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 filetype plugin indent on     " required!
@@ -305,3 +308,16 @@ let g:startify_custom_header = [
 \]
 
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+"支持vue高亮
+"autocmd BufNewFile,BufRead *.vue set filetype=html
+"vim-vue-syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_vue_checkers = ['eslint']
+let local_eslint = finddir('node_modules', '.;') . '/.bin/eslint'
+if matchstr(local_eslint, "^\/\\w") == ''
+    let local_eslint = getcwd() . "/" . local_eslint
+endif
+if executable(local_eslint)
+    let g:syntastic_javascript_eslint_exec = local_eslint
+    let g:syntastic_vue_eslint_exec = local_eslint
+endif

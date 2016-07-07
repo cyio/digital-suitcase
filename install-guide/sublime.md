@@ -161,3 +161,15 @@ Exec=bash -c 'LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text
 OnlyShowIn=Unity;
 ```
 
+### 修改console命令
+
+1.用编辑器打开subl文件:
+```bash
+sudo subl $(which subl)
+```
+2.修改subl的内容：
+```bash
+#!/bin/bash
+LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text "$@"
+```
+
