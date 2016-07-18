@@ -2,7 +2,7 @@
 	default = matching
 [core]
 	trustctime = false
-	autocrlf = true
+	autocrlf = false
 	excludesfile = /d/cyio/.gitignore
 	editor = vim
 [user]
