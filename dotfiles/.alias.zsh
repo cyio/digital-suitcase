@@ -2,6 +2,7 @@ alias byt='bytewiser'
 alias dt='date --rfc-3339="date"'
 alias v='vim'
 alias z='cd'
+alias pc='percol'
 alias hig='history|grep'
 alias open='xdg-open'
 # alias vim="nvim"
