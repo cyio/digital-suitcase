@@ -1,10 +1,11 @@
 source ~/.alias.zsh
+ssh-add ~/.ssh/github_rsa
 # eval "$(hub alias -s)"
 # cd $OLDPWD
 # alias tmuxre='tmux new-session -t default || tmux new-session -s default
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-export PATH=~/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:~/d/cyio/android-studio/bin:~/Android/Sdk/platform-tools
+export PATH=~/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:~/d/cyio/android-studio/bin:~/Android/Sdk/platform-tools:/usr/local/jdk/bin
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
