@@ -1,0 +1,11 @@
+# Squirrel settings
+# encoding: utf-8
+# 此文档是调整打字样式的
+
+patch:
+  "style/font_point": 18
+  "style/horizontal": false
+  "style/corner_radius": 4
+  "style/border_height": 5
+  "style/border_width": 5
+  "style/color_scheme": ink

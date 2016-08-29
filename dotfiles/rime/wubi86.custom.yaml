@@ -1,0 +1,17 @@
+# Rime schema settings
+# encoding: utf-8
+# 此文檔是切換简体 -› 繁體
+
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 西文 ]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: simplification
+      states: [ 漢字, 汉字 ]
+  simplifier/opencc_config: s2t.json
+  engine/filters:
+    - simplifier
+    - uniquifiery
