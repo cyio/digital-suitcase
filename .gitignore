@@ -5,3 +5,4 @@ example
 .vagrant
 .idea
 *.box
+.DS_Store
