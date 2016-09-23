@@ -5,8 +5,8 @@ set t_Co=256
 set autoread
 color mango
 " hardcore mode
-inoremap <esc> <nop>
-inoremap <left> <nop>
+" inoremap <esc> <nop>
+" inoremap <left> <nop>
 inoremap jk <esc>
 iabbrev cls console.log('')
 " edit my vimrc
