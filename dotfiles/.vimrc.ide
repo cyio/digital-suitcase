@@ -14,7 +14,18 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " source my vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr>
 let g:hybrid_use_iTerm_colors = 1
-"colorscheme hybrid  
+"colorscheme hybrid
+
+" 高亮多余的空白字符及 Tab
+"highlight RedundantSpaces ctermbg=red guibg=red
+"match RedundantSpaces /\s\+$\| \+\ze\t\|\t/
+set listchars=tab:——,trail:⋅,nbsp:⋅
+
+" indent 默认不显示，按 i 显示
+let g:indent_guides_enable_on_vim_startup=0
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+:nmap <silent> <Leader>i <Plug>IndentGuidesToggle
 
 "文件系统跟编码
 set encoding=utf8
@@ -28,7 +39,7 @@ call plug#begin('~/.vim/plugged')
 " My Plugins here:
 "Plug 'posva/vim-vue'
 Plug 'ajh17/VimCompletesMe'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'ConradIrwin/vim-bracketed-paste'
@@ -40,7 +51,7 @@ Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
-Plug 'kien/ctrlp.vim' 
+Plug 'kien/ctrlp.vim'
 Plug 'vim-scripts/xml.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flazz/vim-colorschemes'
@@ -55,7 +66,7 @@ Plug 'tpope/vim-repeat'
 "Plug 'Shougo/neocomplete'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/wildfire.vim'
-"Plug 'nathanaelkane/vim-indent-guides'
+Plug 'nathanaelkane/vim-indent-guides'
 "Plug 'yonchu/accelerated-smooth-scroll'
 "Plug 'ianva/vim-youdao-translater'
 Plug 'marijnh/tern_for_vim'
@@ -90,22 +101,19 @@ cnoreabbrev AG Ack
 "Setup SuperTab
 let g:SuperTabRetainCompletionType="context"
 
-"For Indent Guides Plugin
-let g:indent_guides_enable_on_vim_startup = 1
-
-" 设定文件浏览器目录为当前目录  
-set bsdir=buffer  
-" 设置编码  
-set encoding=utf-8  
+" 设定文件浏览器目录为当前目录
+set bsdir=buffer
+" 设置编码
+set encoding=utf-8
 set nocompatible
 set laststatus=2
-" 设置文件编码  
-set fenc=utf-8 
+" 设置文件编码
+set fenc=utf-8
 
-" 设置文件编码检测类型及支持格式  
-set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936  
+" 设置文件编码检测类型及支持格式
+set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 
-"显示行号  
+"显示行号
 set number
 "Show related row numbers
 set relativenumber
@@ -117,10 +125,10 @@ set backspace=indent,eol,start
 "忽略大小写查找
 set ic
 
-" tab宽度  
-set tabstop=2  
-set cindent shiftwidth=2  
-set autoindent shiftwidth=2 
+" tab宽度
+set tabstop=2
+set cindent shiftwidth=2
+set autoindent shiftwidth=2
 
 " set 折叠
 set foldmethod=indent
@@ -128,8 +136,7 @@ set foldmethod=indent
 set foldlevelstart=99
 
 " leader
-let g:mapleader = ","
-let g:localmapleader = "\\"
+map <SPACE> <leader>
 
 " move the current line below
 nnoremap <leader>- ddp
@@ -174,11 +181,11 @@ map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 
 "  映射NERDTree插件
-:map <leader>n :NERDTree<CR>  
+:map <leader>n :NERDTree<CR>
 "let loaded_nerd_tree=1
 let NERDTreeQuitOnOpen = 1
 let NERDChristmasTree=1
-let g:NERDTreeWinSize = 32 
+let g:NERDTreeWinSize = 32
 map <leader>f :NERDTreeToggle<CR>
 
 " Settings for vim-easymotion
