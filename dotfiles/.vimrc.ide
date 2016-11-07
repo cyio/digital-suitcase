@@ -27,6 +27,11 @@ let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 :nmap <silent> <Leader>i <Plug>IndentGuidesToggle
 
+" indent lines
+map <leader>il :IndentLinesToggle<CR>
+let g:indentLine_char = '┊'
+let g:indentLine_color_term = 0 
+
 "文件系统跟编码
 set encoding=utf8
 set ffs=unix,mac
@@ -66,7 +71,8 @@ Plug 'tpope/vim-repeat'
 "Plug 'Shougo/neocomplete'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/wildfire.vim'
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
+"Plug 'nathanaelkane/vim-indent-guides'
 "Plug 'yonchu/accelerated-smooth-scroll'
 "Plug 'ianva/vim-youdao-translater'
 Plug 'marijnh/tern_for_vim'
@@ -350,3 +356,4 @@ if executable(local_eslint)
     let g:syntastic_javascript_eslint_exec = local_eslint
     let g:syntastic_vue_eslint_exec = local_eslint
 endif
+
