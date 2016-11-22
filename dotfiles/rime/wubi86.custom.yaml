@@ -10,7 +10,7 @@ patch:
     - name: full_shape
       states: [ 半角, 全角 ]
     - name: simplification
-      states: [ 漢字, 汉字 ]
+      states: [ 汉字, 漢字 ]
   simplifier/opencc_config: s2t.json
   engine/filters:
     - simplifier

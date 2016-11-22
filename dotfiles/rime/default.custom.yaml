@@ -6,7 +6,7 @@
 
 patch:
   schema_list:
-  - schema: wubi_pinyin
+  - schema: wubi86
   switches:
   - name: ascii_mode
     states: ["中文", "西文"]
